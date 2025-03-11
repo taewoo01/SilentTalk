@@ -7,13 +7,13 @@ const Nav = () => {
     return (
         <>
             {/* 소개 페이지 (아이콘 적용) */}
-            <Link to="/About" className="text-gray-700 hover:text-blue-500 text-4xl p-4">
+            <Link to="/About" className="text-gray-700 hover:text-blue-500 w-full text-4xl p-4 flex justify-start">
                 <FontAwesomeIcon icon={faCircleInfo} />
             </Link>
 
             {/* 홈 페이지 링크 */}
             <Link to="/">
-                <div className="text-7xl font-bold text-black flex justify-center p-10 m-10 bg-cover bg-center">
+                <div className="h-40 text-7xl font-bold text-black flex justify-center p-10 m-10 bg-cover bg-center">
                     SilentTalk
                 </div>
             </Link>
