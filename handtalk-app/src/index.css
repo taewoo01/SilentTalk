@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 애니메이션 */
+@keyframes expandText {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-expand {
+  animation: expandText 1.5s ease-out forwards;
+}
+
+@keyframes textReveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.text-reveal {
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  animation: textReveal 2s ease-out forwards;
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+.w-screen, .h-screen {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center;     /* 세로 중앙 정렬 */
+}
+
+
+
