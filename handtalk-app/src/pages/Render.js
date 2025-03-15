@@ -19,10 +19,10 @@ const Render = () => {
         <h1 className="text-3xl font-bold text-black mb-6 text-center">
           실시간 수어 번역
         </h1>
-        <div className="w-full max-w-2xl h-96 bg-gray-800 flex items-center justify-center rounded-lg shadow-md mb-4">
+        <div className="w-full max-w-2xl h-96 bg-gray-800 flex items-center justify-center rounded-lg shadow-md mb-4 mx-auto">
           <span className="text-white text-lg">카메라 화면</span>
         </div>
-        <div className="w-full max-w-2xl p-6 bg-white rounded-lg shadow-md text-center border border-gray-300">
+        <div className="w-full max-w-2xl p-6 bg-white rounded-lg shadow-md text-center border border-gray-300 mx-auto">
           <p className="text-lg font-semibold text-gray-800">번역 결과</p>
           <div className="text-xl font-bold text-black mt-2">
             여기에 번역된 텍스트 표시
@@ -56,7 +56,7 @@ const Render = () => {
         </div>
 
         {/* 영상 화면 */}
-        <div className="w-full max-w-2xl h-96 bg-gray-800 flex items-center justify-center rounded-lg shadow-md mb-4">
+        <div className="w-full max-w-2xl h-96 bg-gray-800 flex items-center justify-center rounded-lg shadow-md mb-4 mx-auto">
           {videoUrl ? (
             <video className="w-full h-full" controls>
               <source src={videoUrl} type="video/mp4" />
@@ -68,7 +68,7 @@ const Render = () => {
         </div>
 
         {/* 번역 결과 */}
-        <div className="w-full max-w-2xl p-6 bg-white rounded-lg shadow-md text-center border border-gray-300">
+        <div className="w-full max-w-2xl p-6 bg-white rounded-lg shadow-md text-center border border-gray-300 mx-auto">
           <p className="text-lg font-semibold text-gray-800">번역 결과</p>
           <div className="text-xl font-bold text-black mt-2">
             여기에 번역된 텍스트 표시

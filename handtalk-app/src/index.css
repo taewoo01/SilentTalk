@@ -42,5 +42,7 @@
   align-items: center;     /* 세로 중앙 정렬 */
 }
 
-
-
+/* src/index.css 또는 src/styles.css에 추가 */
+video::-webkit-media-controls {
+  display: none !important;
+}
