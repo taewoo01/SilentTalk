@@ -46,8 +46,10 @@ function App() {
         <SplashScreen />
       ) : (
         <div className="min-h-screen flex flex-col">
-          <Nav />
-          <div className="flex-1">
+          <Nav /> {/* 네비게이션 컴포넌트 */}
+          
+          {/* 콘텐츠 영역 */}
+          <div className="flex-1 overflow-auto">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/About" element={<About />} />
@@ -58,12 +60,12 @@ function App() {
               <Route path="/Meeting" element={<Meeting />} />
             </Routes>
           </div>
-          <Bottom />
+
+          <Bottom /> {/* 하단 바 컴포넌트 */}
         </div>
       )}
     </Router>
   );
 }
-
 
 export default App;
