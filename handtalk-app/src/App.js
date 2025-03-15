@@ -6,8 +6,28 @@ import About from "./pages/About";
 import Nomal from "./pages/Nomal";
 import Render from "./pages/Render";
 import Feedback from "./pages/feedback";
+import Meeting from "./pages/Meeting";
 import Bottom from "./pages/Bottom";
+import Source from "./pages/Source";
 import "./index.css";  // TailwindCSS 및 애니메이션 적용된 CSS 파일
+
+function SplashScreen() {
+  const [showFullText, setShowFullText] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowFullText(true);
+    }, 1500);
+  }, []);
+
+  return (
+    <div className="w-screen h-screen flex items-center justify-center bg-blue-500 overflow-hidden">
+      <h1 className={`text-7xl font-bold text-white ${showFullText ? 'text-reveal' : 'animate-expand'}`}>
+        {showFullText ? "SilentTalk" : "ST"}
+      </h1>
+    </div>
+  );
+}
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +54,8 @@ function App() {
               <Route path="/Nomal" element={<Nomal />} />
               <Route path="/Render" element={<Render />} />
               <Route path="/Feedback" element={<Feedback />} />
+              <Route path="/Source" element={<Source />} />
+              <Route path="/Meeting" element={<Meeting />} />
             </Routes>
           </div>
           <Bottom />

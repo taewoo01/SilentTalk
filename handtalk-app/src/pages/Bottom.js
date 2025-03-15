@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Bottom = () => {
   return (
@@ -13,7 +14,9 @@ const Bottom = () => {
         <span className="ml-2 text-gray-300">이 영</span> ·
         <span className="ml-2 text-gray-300">백선주</span>
       </div>
-      <div className="text-xs text-end">출처</div>
+      <Link to={'./Source'}>
+        <div className="text-xs text-end">출처</div>
+      </Link>
     </footer>
   );
 };
