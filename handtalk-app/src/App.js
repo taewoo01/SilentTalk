@@ -21,7 +21,7 @@ function SplashScreen() {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-blue-500 overflow-hidden">
+    <div className="w-screen h-screen flex items-center justify-center bg-black overflow-hidden">
       <h1 className={`text-7xl font-bold text-white ${showFullText ? 'text-reveal' : 'animate-expand'}`}>
         {showFullText ? "SilentTalk" : "ST"}
       </h1>
